@@ -419,6 +419,12 @@ void runBenchmark()
     }
 }
 
+void Algorithm_2_Test(){
+
+  
+
+}
+
 int main()
 {
     bool run_benchmark = true;
