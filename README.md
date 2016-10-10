@@ -1,4 +1,4 @@
-This is another test.
+This is a test.
 
 Copyright (c) 2016 Theodore Gast, Chuyuan Fu, Chenfanfu Jiang, Joseph Teran
 
