@@ -421,12 +421,15 @@ void runBenchmark()
 
 void Algorithm_2_Test(){
 
-  
+  Eigen::Matrix<float, 2, 2> F,C;
+  F<<1,2,3,4;
+  C=F*F.transpose();
 
 }
 
 int main()
 {
+  Algorithm_2_Test();
     bool run_benchmark = true;
     if (run_benchmark) runBenchmark();
 }
