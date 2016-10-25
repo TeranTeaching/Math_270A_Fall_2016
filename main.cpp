@@ -419,17 +419,36 @@ void runBenchmark()
     }
 }
 
-void Algorithm_2_Test(){
-
-  Eigen::Matrix<float, 2, 2> F,C;
-  F<<1,2,3,4;
-  C=F*F.transpose();
+void My_SVD(const Eigen::Matrix2f& F,Eigen::Matrix2f& U,Eigen::Matrix2f& sigma,Eigen::Matrix2f& V){
+//
+//Compute the SVD of input F with sign conventions discussed in class and in assignment
+//
+//input: F
+//output: U,sigma,V with F=U*sigma*V.transpose() and U*U.transpose()=V*V.transpose()=I;
 
 }
 
+void My_Polar(const Eigen::Matrix3f& F,Eigen::Matrix3f& R,Eigen::Matrix3f& S){
+  //
+  //Compute the polar decomposition of input F (with det(R)=1)
+  //
+  //input: F
+  //output: R,s with F=R*S and R*R.transpose()=I and S=S.transpose()
+
+}
+
+// void Algorithm_2_Test(){
+//
+//   Eigen::Matrix2f F,C,U,V;
+//   F<<1,2,3,4;
+//   C=F*F.transpose();
+//   Eigen::Vector2f s2;
+//   JIXIE::Jacobi(C,s2,V);
+//
+// }
+
 int main()
 {
-  Algorithm_2_Test();
-    bool run_benchmark = true;
-    if (run_benchmark) runBenchmark();
+  bool run_benchmark = false;
+  if (run_benchmark) runBenchmark();
 }
